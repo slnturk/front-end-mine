@@ -1,0 +1,30 @@
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 50px;
+    background: wheat;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-right {
+    display: flex;
+}
+
+.header-logo {
+    position: relative;
+    margin-left: 1rem;
+}
+
+.header-button {
+    color: white;
+    background: #0089ec;
+    border-radius: 8px;
+    border: none;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
