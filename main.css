@@ -6,7 +6,7 @@ font-weight: 400
 /* header */
 
 header {
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
@@ -32,7 +32,7 @@ header {
     background: #0089ec;
     border-radius: 8px;
     border: none;
-    margin-right: 1rem;
+    margin-right: 1.5rem;
     margin-left: 1rem;
 }
 
@@ -139,7 +139,7 @@ h3 {
     transition: box-shadow 0,3s ease;
 }
 
-.section-gray p {
+.section-gray p , .parallax-link {
     color: #0089ec;
     font-size: 15px;
     font-weight: 600;
@@ -170,7 +170,7 @@ font-size: 20px;
     padding-top: 88px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     gap: 48px;
 }
 
@@ -182,4 +182,78 @@ font-size: 20px;
 
 .özel p {
     text-align: center;
+}
+
+/* section 3 */
+
+
+.parallax-header {
+    font-size: 24px;
+    font-weight: 600;
+}
+.parallax-content {
+    font-size: 16px;
+
+}
+
+.parallax {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+    overflow: hidden;
+}
+
+.sol p{
+    max-width: 310px;
+}
+
+.sağ img {
+    position: absolute;
+}
+
+.parallax-feature1 {
+    z-index: 1;
+    transform: scale(1);
+    transition: transform 1s ease-in-out;
+}
+
+.parallax-feature2 {
+    z-index: 1;
+    transform: scale(0);
+    transition: transform 1s ease-in-out;
+}
+
+#parallax-text-1 , #parallax-text-2 {
+    transition: transform 1s ease;
+}
+
+#parallax-text-1 {
+    transform:  translateY(50%);
+}
+
+#parallax-text-2 {
+    transform: translateY(200vh);
+}
+
+.active-text-1 #parallax-text-1{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.active-text-2 #parallax-text-2{
+    opacity: 1;
+    transform: translateY(50%);
+}
+
+.scale-feature .parallax-feature1 {
+    transform: scale(1);
+}
+
+.scale-feature .parallax-feature2 {
+    transform: scale(1);
 }
