@@ -491,6 +491,12 @@ h4 {
 
 /* section 10 */
 
+.end-son {
+    display: flex;
+    flex-direction: column;
+    
+}
+
 h6 {
     font-weight: 200;
 }
@@ -508,9 +514,60 @@ h6 {
 
 .endbaşlık {
     display: flex;
-    gap: 6000px;
+    gap: 600px;
 }
 
+.ulaşım-container {
+    width: 1100px;
+    display: flex;
+    gap: 50px;
+    margin-top: 36px;
+}
+
+.başlık {
+    font-weight: 600;
+}
+
+.yazı {
+    color: #00000093;
+    cursor: pointer;
+}
+
+.yazı:hover {
+   text-decoration: underline;
+}
+
+.sıra {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    line-height: 21px;
+    font-size: 15px;
+}
+
+.sıra-son {
+    
+}
+
+.yardım {
+    color: #00000093;
+}
+
+.telefon {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.görsel {
+    display: flex;
+    gap: 10px;
+}
  
 
 
